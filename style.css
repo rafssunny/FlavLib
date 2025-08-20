@@ -2,13 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Rock+Salt&family=Italianno&display=swap');
 
+:root {
+    --main-font: "Chau Philomene One", sans-serif;
+}
 
 body{
     background-image: url(imgs/Fundo-Páginas.jpg);
+    background-position: center;
+    margin: 0;
+    padding: 0; 
 }
 header{
     color: white;
 }
+/* Titulo FlavLib */
 #titulo{
     font-size: x-large;
     display: block;
@@ -23,10 +30,10 @@ header{
     line-height: 1.1;
     padding: 10px;
     margin-bottom: 5px;
-    --main-font:(font-family: "Chau Philomene One");
+    font-family: var(--main-font); /* Corrigido */
     font-weight: bolder;
     font-style: normal;
-    margin-top: -15px;
+    margin-top: 15px; 
     box-shadow: 4px 4px black;
     letter-spacing: 10px;
 }
@@ -40,11 +47,14 @@ header{
 hr{
     color: white;
 }
+
+/* Menu: Home; Library; Apoio;*/
 #menu{
     text-align: center;
     height: 25px;
+    margin: 15px 0; 
 }
-#homeoption, #liboption{
+#homeoption, #liboption, #lovoption{
     padding: 5px;
     margin: 2px;
     display: inline-block;
@@ -60,12 +70,12 @@ hr{
     margin-inline-start: -4px;
     text-align: center;
     padding: 8px 12px;
-    font: var(--main-font);
+    font-family: var(--main-font); 
     font-size: 125%;
     font-weight: bolder;
     box-shadow: 4px 4px black;
 }
-#homeoption:hover, #liboption:hover, #donate:hover{
+#homeoption:hover, #liboption:hover, #donate:hover, #lovoption:hover{
   --text-light: rgba(255, 255, 255, 0.4);
   --edge-light: hsla(0, 0%, 50%, 1);
   text-shadow: 0px 0px 10px var(--text-light);
@@ -73,14 +83,9 @@ hr{
     2px 4px 8px hsla(0, 0%, 0%, 0.295);
   transform: scale(1.1);
 }
-#homeoption:active, #liboption:active, #donate:active{
+#homeoption:active, #liboption:active, #donate:active, #lovoption:active{
   --text-light: rgba(255, 255, 255, 1);
 
-  background: linear-gradient(
-    140deg,
-    hsla(var(--back-color), 50%, 1) min(2em, 20%),
-    hsla(var(--back-color), 50%, 0.6) min(8em, 100%)
-  );
   box-shadow: inset 0.4px 1px 8px var(--edge-light),
     0px 0px 8px hsla(var(--back-color), 50%, 0.6);
   text-shadow: 0px 0px 20px var(--text-light);
@@ -88,28 +93,35 @@ hr{
   letter-spacing: 0.1em;
   transform: scale(1);
 }
+
+/*Linha de divisão*/
 hr{
     margin: 25px;
 }
+
+/*Conteúdo principal*/
 main{
     font-family: Arial, Helvetica, sans-serif;
     display: block;
-    background-color: #7899d4;
+    background-color: #294d8b;
     width: 90%;
+    max-width: 1200px; 
     height: auto;
     color: white;
-    margin: auto;
+    margin: 0 auto 50px; 
     text-align: center;
     font-size: 1.2em;
     border: 2px solid #c0dfff;
     border-radius: 2px 12px 1px 12px;
     box-shadow: 4px 4px black;
-    padding: 10px;
-    margin-bottom: 290px;
+    padding: 50px;
+    box-sizing: border-box; 
 }
+
+/*rodapé*/
 footer{
     display: block;
-    background-color: #7899d4;
+    background-color: #294d8b;
     border: 2px solid #c0dfff;
     text-align: center;
     width: 30%;
@@ -121,10 +133,12 @@ footer{
     font-family: var(--main-font);
     font-weight: bolder;
     box-shadow: 4px 4px black;
+    position: relative; 
+    z-index: 1; 
 }
 #fraseamor{
   font-family: "Italianno", cursive;
-  font-weight: bole;
+  font-weight: bold; 
   font-style: normal;
   font-size: 2em;
   margin-bottom: 2px;
@@ -134,7 +148,7 @@ footer{
 #donate{
     display: block;
     text-decoration: none;
-    background-color: #35ff69;
+    background-color: #27b64a;
     border: 3px solid white;
     border-radius: 50px;
     width: 30%;
@@ -143,9 +157,18 @@ footer{
     margin: auto;
     text-align: center;
     margin-bottom: 10px;
-    color: black;
+    color: White;
     font-family: var(--main-font);
     font-weight: normal;
     font-size: x-large;
     box-shadow: 4px 4px black;
+}
+#flavlendo_sentada img{
+    display: block;
+    width: 30%;
+    height: auto;
+    margin: auto;
+    margin-bottom: -10%;
+    margin-top: -3%;
+    position: relative; 
 }
