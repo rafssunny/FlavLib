@@ -6,6 +6,7 @@
     --main-font: "Chau Philomene One", sans-serif;
 }
 
+/* Corpo e Header*/
 body{
     background-image: url(imgs/Fundo-Páginas.jpg);
     background-position: center;
@@ -15,6 +16,8 @@ body{
 header{
     color: white;
 }
+
+
 /* Titulo FlavLib */
 #titulo{
     font-size: x-large;
@@ -136,6 +139,8 @@ footer{
     position: relative; 
     z-index: 1; 
 }
+
+/* Frase eu te amo */
 #fraseamor{
   font-family: "Italianno", cursive;
   font-weight: bold; 
@@ -145,6 +150,8 @@ footer{
   margin-top: 2px;
   text-decoration: underline;
 }
+
+/*Botão buy me a coffee*/
 #donate{
     display: block;
     text-decoration: none;
@@ -163,6 +170,8 @@ footer{
     font-size: x-large;
     box-shadow: 4px 4px black;
 }
+
+/* Imagem flav lendo bonitinha  */
 #flavlendo_sentada img{
     display: block;
     width: 30%;
@@ -171,4 +180,71 @@ footer{
     margin-bottom: -10%;
     margin-top: -3%;
     position: relative; 
+}
+div{
+    padding-left: 0.95%;
+    padding-right: -5%;
+}
+.historias_selecionar{
+  width: 30%;
+  max-width: 280px;
+  aspect-ratio: 3/4;
+  background: #7899d4;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+  display: inline-block;
+  margin: 1%;
+}
+
+.historias_selecionar:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  background: rgb(103, 151, 255);
+}
+
+.pagina-frente {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.historias_selecionar:hover .pagina-frente {
+  height: 0px;
+  opacity: 0;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+}
+
+.historias_selecionar:hover .second-content {
+  opacity: 1;
+  height: 100%;
+  font-size: 1.8rem;
+  transform: rotate(0deg);
+}
+
+@media (max-width: 600px) {
+    div {
+        padding-left: 0.5%;
+    }
 }
