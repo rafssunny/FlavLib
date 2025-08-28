@@ -400,24 +400,14 @@ footer{
   transform: rotate(0);
 }
 
-/* Responsividade */
-@media (max-width: 900px) {
-  .pagina-livro {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  #descricao {
-      max-width: 100%;
-      text-align: center;
-  }
-  
-  #descricao p {
-      text-align: justify;
-  }
+/*Página buy me a coffee*/
+#imgdonate{
+  display: block;
+  margin: auto;
 }
 
-@media (max-width: 750px) {
+/* Responsividade */
+@media (max-width: 900px) {
   .livros-container {
     animation-duration: 15s; 
   }
