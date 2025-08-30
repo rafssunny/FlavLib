@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Bomb</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Bomb</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     .slideshow {
       margin: auto;
       overflow: hidden;
+      width: 50%;
+      text-align: auto;
     }
 
     .slideshow img {
       position: absolute;
-      width: 100%;
+      width: 50%;
       height: auto;
       object-fit: cover;
       opacity: 0;
@@ -26,6 +28,9 @@
     .slideshow img:nth-child(4) { animation-delay: 6s; }
     .slideshow img:nth-child(5) { animation-delay: 8s; }
 
+    main{
+      border-color: #FF07FF;
+    }
     @keyframes fade {
       0% { opacity: 0; }
       10% { opacity: 1; }
@@ -33,23 +38,76 @@
       40% { opacity: 0; }
       100% { opacity: 0; }
     }
+    @media (max-width: 900px) {
+      .slideshow{
+        width: 100%;
+      }
+      .slideshow img{
+        width: 100%;
+      }
+    }
+
+    /* === Corações de fundo === */
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1; 
+    }
+
+    .hearts span {
+      position: absolute;
+      bottom: -40px;
+      font-size: 40px;
+      color: #ff4d88;
+      animation: rise 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes rise {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-110vh) scale(1.5);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
-    <header>
-        <h1 id="titulo">Flav<span id="lib">Library</span></h1>
-        <picture></picture>
-        <nav id="menu">
-            <a href="paginainicial.html" id="homeoption">Home</a>
-            <a href="library.html" id="liboption">Library</a>
-            <a href="bomb.html" id="lovoption">Bomb</a>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <h2>As pessoas amam suas histórias, amor.</h2>
-        <h2>Uma página dedicada ao "Love Bombing"</h2>
-    </main>
+  <!-- fundo com corações -->
+  <div class="hearts">
+    <span style="left:5%; animation-delay:0s; font-size:40px;">♥</span>
+    <span style="left:15%; animation-delay:1s; font-size:45px;">♥</span>
+    <span style="left:25%; animation-delay:2s; font-size:50px;">♥</span>
+    <span style="left:35%; animation-delay:3s; font-size:42px;">♥</span>
+    <span style="left:45%; animation-delay:4s; font-size:55px;">♥</span>
+    <span style="left:55%; animation-delay:5s; font-size:48px;">♥</span>
+    <span style="left:65%; animation-delay:1.5s; font-size:50px;">♥</span>
+    <span style="left:75%; animation-delay:2.5s; font-size:60px;">♥</span>
+    <span style="left:85%; animation-delay:3.5s; font-size:52px;">♥</span>
+    <span style="left:95%; animation-delay:4.5s; font-size:45px;">♥</span>
+  </div>
+
+  <header>
+    <h1 id="titulo">Flav<span id="lib">Library</span></h1>
+    <picture></picture>
+    <nav id="menu">
+      <a href="paginainicial.html" id="homeoption">Home</a>
+      <a href="library.html" id="liboption">Library</a>
+      <a href="bomb.html" id="lovoption">Bomb</a>
+    </nav>
+  </header>
+  <hr>
+  <main>
+    <h2>As pessoas amam suas histórias, amor.</h2>
+    <h2>Uma página dedicada ao "<span style="color: #FF07FF;">Love Bombing</span>"</h2>
+  </main>
   <div class="slideshow">
     <img src="love-bombing/f1.jpg" alt="1">
     <img src="love-bombing/f2.jpg" alt="2">
