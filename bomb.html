@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Bomb</title>
     <link rel="stylesheet" href="style.css">
+  <style>
+    .slideshow {
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .slideshow img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      opacity: 0;
+      animation: fade 10s infinite;
+    }
+    
+    .slideshow img:nth-child(1) { animation-delay: 0s; }
+    .slideshow img:nth-child(2) { animation-delay: 2s; }
+    .slideshow img:nth-child(3) { animation-delay: 4s; }
+    .slideshow img:nth-child(4) { animation-delay: 6s; }
+    .slideshow img:nth-child(5) { animation-delay: 8s; }
+
+    @keyframes fade {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      30% { opacity: 1; }
+      40% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -17,5 +46,16 @@
         </nav>
     </header>
     <hr>
+    <main>
+        <h2>As pessoas amam suas histórias, amor.</h2>
+        <h2>Uma página dedicada ao "Love Bombing"</h2>
+    </main>
+  <div class="slideshow">
+    <img src="love-bombing/f1.jpg" alt="1">
+    <img src="love-bombing/f2.jpg" alt="2">
+    <img src="love-bombing/f3.jpg" alt="3">
+    <img src="love-bombing/f4.jpg" alt="4">
+    <img src="love-bombing/f5.jpg" alt="5">
+  </div>
 </body>
 </html>
