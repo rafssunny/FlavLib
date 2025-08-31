@@ -55,14 +55,19 @@ hr{
 
 /* Menu: Home; Library; Apoio;*/
 #menu{
+    display: flex;
+    justify-content: center;
     text-align: center;
     height: 25px;
     margin: 15px 0; 
 }
+
 #homeoption, #liboption, #lovoption{
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
     padding: 5px;
     margin: 2px;
-    display: inline-block;
     width: 20%;
     height: 20px;
     border: 2px solid #c0dfff;
@@ -72,13 +77,17 @@ hr{
     text-align: center;
     color: white;
     text-decoration: none;
-    margin-inline-start: -4px;
     text-align: center;
     padding: 8px 12px;
     font-family: var(--main-font); 
     font-size: 125%;
     font-weight: bolder;
     box-shadow: 4px 4px black;
+}
+
+#homeoption .icon {
+    width: 20px;   /* Ajuste conforme necessário */
+    height: 20px;
 }
 #homeoption:hover, #liboption:hover, #donate:hover, #lovoption:hover{
   --text-light: rgba(255, 255, 255, 0.4);
