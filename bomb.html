@@ -6,6 +6,7 @@
   <title>Love Bomb</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    /* Imagens aparecendo e sumindo*/
     .slideshow {
       margin: auto;
       overflow: hidden;
@@ -19,23 +20,21 @@
       height: auto;
       object-fit: cover;
       opacity: 0;
-      animation: fade 10s infinite;
+      animation: fade 53s infinite;
     }
-    
-    .slideshow img:nth-child(1) { animation-delay: 0s; }
-    .slideshow img:nth-child(2) { animation-delay: 2s; }
-    .slideshow img:nth-child(3) { animation-delay: 4s; }
-    .slideshow img:nth-child(4) { animation-delay: 6s; }
-    .slideshow img:nth-child(5) { animation-delay: 8s; }
+    .slideshow img:nth-child(n) {
+      animation-delay: calc((var(--i) - 1) * (53s / 53));
+    }
 
     main{
       border-color: #FF07FF;
     }
+    
     @keyframes fade {
       0% { opacity: 0; }
-      10% { opacity: 1; }
-      30% { opacity: 1; }
-      40% { opacity: 0; }
+      1.8% { opacity: 1; }
+      4.0% { opacity: 1; }
+      4.0% { opacity: 0; }
       100% { opacity: 0; }
     }
     @media (max-width: 900px) {
@@ -47,7 +46,7 @@
       }
     }
 
-    /* === Corações de fundo === */
+    /* Corações de fundo */
     .hearts {
       position: fixed;
       top: 0;
@@ -105,15 +104,64 @@
   </header>
   <hr>
   <main>
-    <h2>As pessoas amam suas histórias, amor.</h2>
+    <h2>Muitas pessoas amam suas histórias, amor.</h2>
     <h2>Uma página dedicada ao "<span style="color: #FF07FF;">Love Bombing</span>"</h2>
   </main>
+  <!--Imagens do slideshow-->
   <div class="slideshow">
-    <img src="love-bombing/f1.jpg" alt="1">
-    <img src="love-bombing/f2.jpg" alt="2">
-    <img src="love-bombing/f3.jpg" alt="3">
-    <img src="love-bombing/f4.jpg" alt="4">
-    <img src="love-bombing/f5.jpg" alt="5">
+    <img src="love-bombing/f1.jpg" alt="1" style="--i:1">
+    <img src="love-bombing/f2.jpg" alt="2" style="--i:2">
+    <img src="love-bombing/f3.jpg" alt="3" style="--i:3">
+    <img src="love-bombing/f4.jpg" alt="4" style="--i:4">
+    <img src="love-bombing/f5.jpg" alt="5" style="--i:5">
+    <img src="love-bombing/f6.jpg" alt="6" style="--i:6">
+    <img src="love-bombing/f7.jpg" alt="7" style="--i:7">
+    <img src="love-bombing/f8.jpg" alt="8" style="--i:8">
+    <img src="love-bombing/f9.jpg" alt="9" style="--i:9">
+    <img src="love-bombing/f10.jpg" alt="10" style="--i:10">
+    <img src="love-bombing/f11.jpg" alt="11" style="--i:11">
+    <img src="love-bombing/f12.jpg" alt="12" style="--i:12">
+    <img src="love-bombing/f13.jpg" alt="13" style="--i:13">
+    <img src="love-bombing/f14.jpg" alt="14" style="--i:14">
+    <img src="love-bombing/f15.jpg" alt="15" style="--i:15">
+    <img src="love-bombing/f16.jpg" alt="16" style="--i:16">
+    <img src="love-bombing/f17.jpg" alt="17" style="--i:17">
+    <img src="love-bombing/f18.jpg" alt="18" style="--i:18">
+    <img src="love-bombing/f19.jpg" alt="19" style="--i:19">
+    <img src="love-bombing/f20.jpg" alt="20" style="--i:20">
+    <img src="love-bombing/f21.jpg" alt="21" style="--i:21">
+    <img src="love-bombing/f22.jpg" alt="22" style="--i:22">
+    <img src="love-bombing/f23.jpg" alt="23" style="--i:23">
+    <img src="love-bombing/f24.jpg" alt="24" style="--i:24">
+    <img src="love-bombing/f25.jpg" alt="25" style="--i:25">
+    <img src="love-bombing/f26.jpg" alt="26" style="--i:26">
+    <img src="love-bombing/f27.jpg" alt="27" style="--i:27">
+    <img src="love-bombing/f28.jpg" alt="28" style="--i:28">
+    <img src="love-bombing/f29.jpg" alt="29" style="--i:29">
+    <img src="love-bombing/f30.jpg" alt="30" style="--i:30">
+    <img src="love-bombing/f31.jpg" alt="31" style="--i:31">
+    <img src="love-bombing/f32.jpg" alt="32" style="--i:32">
+    <img src="love-bombing/f33.jpg" alt="33" style="--i:33">
+    <img src="love-bombing/f34.jpg" alt="34" style="--i:34">
+    <img src="love-bombing/f35.jpg" alt="35" style="--i:35">
+    <img src="love-bombing/f36.jpg" alt="36" style="--i:36">
+    <img src="love-bombing/f37.jpg" alt="37" style="--i:37">
+    <img src="love-bombing/f38.jpg" alt="38" style="--i:38">
+    <img src="love-bombing/f39.jpg" alt="39" style="--i:39">
+    <img src="love-bombing/f40.jpg" alt="40" style="--i:40">
+    <img src="love-bombing/f41.jpg" alt="41" style="--i:41">
+    <img src="love-bombing/f42.jpg" alt="42" style="--i:42">
+    <img src="love-bombing/f43.jpg" alt="43" style="--i:43">
+    <img src="love-bombing/f44.jpg" alt="44" style="--i:44">
+    <img src="love-bombing/f45.jpg" alt="45" style="--i:45">
+    <img src="love-bombing/f46.jpg" alt="46" style="--i:46">
+    <img src="love-bombing/f47.jpg" alt="47" style="--i:47">
+    <img src="love-bombing/f48.jpg" alt="48" style="--i:48">
+    <img src="love-bombing/f49.jpg" alt="49" style="--i:49">
+    <img src="love-bombing/f50.jpg" alt="50" style="--i:50">
+    <img src="love-bombing/f51.jpg" alt="51" style="--i:51">
+    <img src="love-bombing/f52.jpg" alt="52" style="--i:52">
+    <img src="love-bombing/f53.jpg" alt="53" style="--i:53">
   </div>
 </body>
 </html>
