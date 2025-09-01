@@ -86,7 +86,7 @@ hr{
 }
 
 #homeoption .icon {
-    width: 20px;   /* Ajuste conforme necessário */
+    width: 20px; 
     height: 20px;
 }
 #homeoption:hover, #liboption:hover, #donate:hover, #lovoption:hover{
